@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotBlank;
 
 @Entity
@@ -24,9 +25,9 @@ public class Taplist {
 	@NotBlank
 	private String descrizione;
 
-	@ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
 	private Pub pub;
-	@OneToMany(mappedBy = "taplist", fetch = FetchType.EAGER)
+	@OneToMany
 	protected List<Birra> birre;
 	
 	public Taplist() {

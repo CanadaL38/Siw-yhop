@@ -1,10 +1,11 @@
 package it.uniroma3.siw.yhop.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
-
+@Entity
 public class Birrificio {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

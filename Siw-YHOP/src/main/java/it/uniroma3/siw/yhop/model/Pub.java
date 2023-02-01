@@ -26,8 +26,8 @@ public class Pub {
 	@NotBlank
 	private String indirizzo;
 	
-	@OneToOne(mappedBy = "pub")
-	private List<Taplist> taplist;
+	@OneToOne
+	private Taplist taplist;
 	
 	public Pub() {
 		this(null,null,null);
@@ -61,11 +61,11 @@ public class Pub {
 		this.indirizzo = indirizzo;
 	}
 
-	public List<Taplist> getTaplist() {
+	public Taplist getTaplist() {
 		return taplist;
 	}
 
-	public void setTaplist(List<Taplist> taplist) {
+	public void setTaplist(Taplist taplist) {
 		this.taplist = taplist;
 	}
 
