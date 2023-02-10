@@ -22,7 +22,7 @@ public class Pub {
 	
 	@NotBlank
 	private String citta;
-	
+
 	@NotBlank
 	private String indirizzo;
 	
@@ -59,6 +59,13 @@ public class Pub {
 
 	public void setIndirizzo(String indirizzo) {
 		this.indirizzo = indirizzo;
+	}
+	
+	public String getCitta() {
+		return citta;
+	}
+	public void setCitta(String citta) {
+		this.citta = citta;
 	}
 
 	public Taplist getTaplist() {

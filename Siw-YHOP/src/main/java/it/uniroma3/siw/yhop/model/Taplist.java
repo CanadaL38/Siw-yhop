@@ -25,7 +25,7 @@ public class Taplist {
 	@NotBlank
 	private String descrizione;
 
-	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@OneToOne
 	private Pub pub;
 	@OneToMany
 	protected List<Birra> birre;

@@ -1,0 +1,107 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;1,100&family=Poppins&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	height:100%;
+	width:100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #D3D3D3;
+	}
+a{
+	color: black;
+	text-decoration: none;
+}
+ a:hover{
+	color: #e91e63 ;
+	border-bottom: 2px solid #e91e63 ;
+}
+h1{
+	color: black;
+	text-align: center;
+}
+.navbar-brand{
+	color:#fff;
+	font-size: 1.8em;
+	font-weight: 700;
+	margin-left: 10%;
+}
+.nav li a {
+	color: #aaa;
+	font-size:1.2em;
+}
+.navbar ul li a:hover{
+	color: #e91e63 ;
+	border-bottom: 2px solid #e91e63 ;
+}
+.signin-button {
+	background-color: #e91d43; 
+	color: black; 
+	padding: 1px 5px; 
+	border-radius: 25px; 
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+}
+.signin-button:hover{
+	background: #e91e63;
+}
+.modify-button {
+	background-color: #e91d43; 
+	color: black; 
+	padding: 1px 5px;  
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+}
+.modify-button:hover{
+	background: #e91e63;
+}
+.add-button {
+	background-color: purple; 
+	color: white; 
+	padding: 1px 5px;  
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+}
+.add-button:hover{
+	background: white;
+}
+.table {
+    width: 82vw;
+    height: auto;
+	margin: 0auto;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    border-bottom: 0;
+}
+.table thead th {
+    background-color: #fff5;
+  }
+  .table tbody tr:nth-child(even) {
+background-color:rgba(0,255,0,0.3);
+  }
+  .table tbody tr:nth-child(odd) {
+background-color:rgba(255,255,0,0.3);
+  }
+
+

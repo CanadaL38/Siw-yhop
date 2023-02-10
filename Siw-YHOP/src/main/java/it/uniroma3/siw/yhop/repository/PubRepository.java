@@ -6,4 +6,6 @@ import it.uniroma3.siw.yhop.model.Pub;
 
 public interface PubRepository extends CrudRepository<Pub,Long> {
 
+	boolean existsByNomeAndIndirizzo(String nome, String indirizzo);
+
 }

@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;1,100&family=Poppins&display=swap');
 
-
-body{
-	margin: 0px;
-	padding: 0px;
-	background: #fff;
+*{
     font-family: 'Poppins', sans-serif;
-    color: #fff;
 
 }
 
 .banner{
-	height:100vh;
+	height:130vh;
 	width:100%;
-	background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/beers.jpg");
-	background-position: top;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/beers.jpg");
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -28,6 +23,10 @@ body{
 .banner .nav li a {
 	color: #aaa;
 	font-size:1.2em;
+}
+.navbar ul li a:hover{
+	color: #e91e63 ;
+	border-bottom: 2px solid #e91e63 ;
 }
 .banner .info{
 	margin-top:10%;
@@ -57,13 +56,22 @@ body{
 .banner .info a:hover{
 	background: #e91e63;
 }
+.banner .signin-button:hover{
+	background: #e91e63;
+}
 a {
   color: black;
   text-decoration: none;
 }
 
+
 footer {
-  background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/beers.jpg");
+ 	height:100%;
+	width:100%;
+	  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/img/schiuma.jpg");
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #info {
@@ -71,7 +79,18 @@ footer {
   margin: 4%;
   font-size: larger;
 }
-
+.signin-button {
+	background-color: #e91d43; 
+	color: black; 
+	padding: 1px 5px; 
+	border-radius: 25px; 
+	text-align: center; 
+	text-decoration: none;
+	display: inline-block; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+}
 h2 {
     font-size: 2.5em;
 	font-weight: 700;
@@ -120,4 +139,17 @@ div.title {
 	font-size: 1em;
 	font-weight: 300;
 	color: #aaa;
+}
+.contatti a:hover{
+	color: #e91e63 ;
+	border-bottom: 2px solid #e91e63 ;
+}
+.immagine-contatti{
+	height:80vh;
+	width:35%;
+    background-image:  url("/img/beerlover.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
 }

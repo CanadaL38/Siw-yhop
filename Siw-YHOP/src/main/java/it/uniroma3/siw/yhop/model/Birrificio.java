@@ -1,10 +1,17 @@
 package it.uniroma3.siw.yhop.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+
 @Entity
 public class Birrificio {
 	@Id
@@ -20,7 +27,8 @@ public class Birrificio {
 	private String citta;
 	
 	private String indirizzo;
-
+	
+	
 	public Birrificio() {
 		this(null,null, null,null);
 	}

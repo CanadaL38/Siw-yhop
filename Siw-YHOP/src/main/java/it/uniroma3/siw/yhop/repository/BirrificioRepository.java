@@ -6,4 +6,6 @@ import it.uniroma3.siw.yhop.model.Birrificio;
 
 public interface BirrificioRepository extends CrudRepository<Birrificio,Long>{
 
+	boolean existsByNomeAndNazione(String nome, String nazione);
+
 }

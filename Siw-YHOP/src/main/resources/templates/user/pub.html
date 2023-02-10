@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/chef.css" />
+	<title>Chef</title>
+</head>
+
+<body>
+	<header id="header-pub">
+		<nav id="menu_bar">
+			<a href="/" class="info_button">HOME</a>
+			<a href="/user/pubs" class="simple_button">Indietro</a>
+		</nav> 
+		<h1 th:text="${pub.nome}"></h1>
+		<h3 th:text="'Indirizzo: ' + ${pub.indirizzo} + ', ' +${pub.citta}"></h3>
+		<h1> ECCO LA NOSTRA TAPLIST </h1>
+		<h2 th:text="${pub.taplist.nome}"></h2>
+		<h3 th:text="${pub.taplist.descrizione}"></h3>
+        <div>
+			<li th:each="birra : ${taplist.birre}">
+				<h4 th:text="'Nome Birra:' + ' ' + ${birra.nome}+ '- ' +${birra.birrificio.nome}"></h4>
+				<h4 th:text="'Nazione di provenienza:' + ' '+${birra.birrificio.nazione}"></h4>
+				<h4 th:text="'Descrizione:' +' '+${birra.descrizione}"></h4>
+				<h4 th:text="'Gradazione:' + ' ' +${birra.gradazione} + '%'"></h4>
+			</li>
+
+		</div>
+       
+		
+	</header>
+			
+</body>
